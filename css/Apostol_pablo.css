@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.section{
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+hr {
+  margin-top: 50px;
+  width:60%;
+}
+.quote p {
+  text-align: center;
+  font-size:20px;
+  padding: 0 0 50px 0;
+  margin: 0 50px 0 50px;
+}
+
+.container{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  position: relative;
+  left:-20px
+}
+
+.link {
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration:none;
+}
+.row {
+  display: -webkit-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -webkit-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -webkit-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+  .column {
+    -webkit-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Swiper style */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #3d3d3d;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination{
+  position: relative;
+  top:-30px;
+}
+.swiper-wrapper img{
+  width: 400px;
+  height: auto;
+  box-shadow: 5px 5px 5px #212121;
+}
